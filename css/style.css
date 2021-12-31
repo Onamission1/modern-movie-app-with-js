@@ -1,0 +1,157 @@
+/* Selector */
+body {
+  background-color: var(--background-color);
+  color: var(--bold-white);
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-color: #232323;
+  --bold-white: #fcfcfc;
+  --btn: #ffc0c0;
+}
+
+/* Container */
+.container h1 {
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Movie */
+.movie {
+  margin-top: 80px;
+}
+
+.movie h2 {
+  text-align: center;
+}
+
+/* Section */
+section {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  transition: 250ms all;
+}
+
+section .imageContainer {
+  flex: 0 0 auto;
+}
+
+/* Main content */
+.content {
+  display: none;
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+
+.content-display {
+  display: block;
+}
+
+.content-display {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.content div {
+  margin: 10px;
+}
+
+#content-close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  /* width: 35px;; */
+  border: 1px solid lightgrey;
+  border-radius: 45%;
+  left: 20px;
+}
+
+/* Image and animate */
+.imageContainer {
+  transition: 250ms all;
+  width: 300px;
+}
+
+.imageContainer:hover {
+  margin-left: 0 40px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.imageContainer {
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+/* Button */
+.btn {
+  color: var(--background-color);
+  background-color: var(--btn);
+  border-color: var(--bold-white);
+  outline: none;
+  min-height: 38px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  font-size: 26px;
+  line-height: 1.5;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+/* Forms */
+form {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 760px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+}
